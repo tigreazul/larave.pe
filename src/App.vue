@@ -1,45 +1,29 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
+    
+import EmailPortal from './components/EmailPortal.vue'
 </script>
 
 <template >
-  <div class="bg-slate-50 px-6 py-24 sm:py-32 lg:px-8">
+
+    <!-- <router-view></router-view> -->
+
+
+    <div class="bg-slate-50 px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
             <div class="absolute -left-2 -translate-y-12 pointer-events-none md:left-[12%]">
-                <svg x-data="{
-        initializeAnimation: false,
-        init() {
-            setTimeout(() => {
-                this.initializeAnimation = true;
-            }, 0);
-        },
-    }" class="text-red-600 animate-cube" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="text-red-600 animate-cube" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m23.102 1 22.1 12.704v25.404M23.101 1l-22.1 12.704v25.404" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path d="m45.202 39.105-22.1 12.702L1 39.105" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path transform="matrix(.86698 .49834 .00003 1 1 13.699)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86698 -.49834 -.00003 1 23.102 26.402)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86701 -.49829 .86701 .49829 1 13.702)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.491H0z"></path>
                 </svg>
             </div>
 
             <div class="absolute -right-2 -translate-y-20 pointer-events-none md:right-1/4">
-                <svg x-data="{
-        initializeAnimation: false,
-        init() {
-            setTimeout(() => {
-                this.initializeAnimation = true;
-            }, 2000);
-        },
-    }" class="text-red-600 animate-cube" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="text-red-600 animate-cube" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m23.102 1 22.1 12.704v25.404M23.101 1l-22.1 12.704v25.404" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path d="m45.202 39.105-22.1 12.702L1 39.105" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path transform="matrix(.86698 .49834 .00003 1 1 13.699)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86698 -.49834 -.00003 1 23.102 26.402)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86701 -.49829 .86701 .49829 1 13.702)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.491H0z"></path>
                 </svg>
             </div>
 
 
-            <div x-data="{
-        initializeAnimation: false,
-        init() {
-            setTimeout(() => {
-                this.initializeAnimation = true;
-            }, 1000);
-        },
-    }" class="absolute bottom-0 right-6 -translate-y-20 pointer-events-none md:right-[12%]">
+            <div class="absolute bottom-0 right-6 -translate-y-20 pointer-events-none md:right-[12%]">
                 <svg class="text-red-600 animate-cube" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m23.102 1 22.1 12.704v25.404M23.101 1l-22.1 12.704v25.404" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path d="m45.202 39.105-22.1 12.702L1 39.105" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path><path transform="matrix(.86698 .49834 .00003 1 1 13.699)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86698 -.49834 -.00003 1 23.102 26.402)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path><path transform="matrix(.86701 -.49829 .86701 .49829 1 13.702)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.491H0z"></path>
                 </svg>
@@ -47,21 +31,13 @@
 
             <h1 class="max-w-3xl mx-auto text-5xl font-bold text-center md:text-6xl lg:text-7xl">Welcome <br class="hidden lg:inline"><span class="text-red-500">Laravel.pe</span></h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">Aquí unimos a apasionados desarrolladores para compartir conocimientos, experiencias y fortalecer nuestra comunidad. Únete a eventos, talleres y debates mientras construimos juntos con Laravel. ¡Explora y conecta!</p>
+
+            <EmailPortal></EmailPortal>
+            
         </div>
     </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
